@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  
+  <context-param>
+  <param-name>contextencoding</param-name>
+  <param-value>utf-8</param-value>
+  </context-param>
+  
+  <display-name>News</display-name>
+  <servlet>
+    <servlet-name>DoLogin</servlet-name>
+    <servlet-class>com.etc.news.servlet.DoLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DoAddType</servlet-name>
+    <servlet-class>com.etc.news.servlet.DoAddType</servlet-class>
+    <init-param>
+    <param-name>encoding</param-name>
+    <param-value>utf-8</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <servlet-name>DoQueryNews</servlet-name>
+    <servlet-class>com.etc.news.servlet.DoQueryNews</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SaveNews</servlet-name>
+    <servlet-class>com.etc.news.servlet.SaveNews</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetAllNewsType</servlet-name>
+    <servlet-class>com.etc.news.servlet.GetAllNewsType</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DoQueryAllType</servlet-name>
+    <servlet-class>com.etc.news.servlet.DoQueryAllType</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DoQueryNewsByType</servlet-name>
+    <servlet-class>com.etc.news.servlet.DoQueryNewsByType</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DoQueryNewsPageByAjax</servlet-name>
+    <servlet-class>com.etc.news.servlet.DoQueryNewsPageByAjax</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DoQueryNewsByImage</servlet-name>
+    <servlet-class>com.etc.news.servlet.DoQueryNewsByImage</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DoDeleteNewsById</servlet-name>
+    <servlet-class>com.etc.news.servlet.DoDeleteNewsById</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DoMyLogin</servlet-name>
+    <servlet-class>com.etc.news.servlet.DoMyLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DoQueryNewsById</servlet-name>
+    <servlet-class>com.etc.news.servlet.DoQueryNewsById</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DoQueryNewsById2</servlet-name>
+    <servlet-class>com.etc.news.servlet.DoQueryNewsById2</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DoQueryNewsPage</servlet-name>
+    <servlet-class>com.etc.news.servlet.DoQueryNewsPage</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DoSaveNews</servlet-name>
+    <servlet-class>com.etc.news.servlet.DoSaveNews</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AutoSearch</servlet-name>
+    <servlet-class>com.etc.news.servlet.AutoSearch</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>DoLogin</servlet-name>
+    <url-pattern>/DoLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DoAddType</servlet-name>
+    <url-pattern>/DoAddType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DoQueryNews</servlet-name>
+    <url-pattern>/DoQueryNews</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SaveNews</servlet-name>
+    <url-pattern>/SaveNews</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetAllNewsType</servlet-name>
+    <url-pattern>/GetAllNewsType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DoQueryAllType</servlet-name>
+    <url-pattern>/DoQueryAllType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DoQueryNewsByType</servlet-name>
+    <url-pattern>/DoQueryNewsByType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DoQueryNewsPageByAjax</servlet-name>
+    <url-pattern>/DoQueryNewsPageByAjax</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DoQueryNewsByImage</servlet-name>
+    <url-pattern>/DoQueryNewsByImage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DoDeleteNewsById</servlet-name>
+    <url-pattern>/DoDeleteNewsById</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DoMyLogin</servlet-name>
+    <url-pattern>/DoMyLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DoQueryNewsById</servlet-name>
+    <url-pattern>/DoQueryNewsById</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DoQueryNewsById2</servlet-name>
+    <url-pattern>/DoQueryNewsById2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DoQueryNewsPage</servlet-name>
+    <url-pattern>/DoQueryNewsPage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DoSaveNews</servlet-name>
+    <url-pattern>/DoSaveNews</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AutoSearch</servlet-name>
+    <url-pattern>/AutoSearch</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
